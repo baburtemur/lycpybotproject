@@ -1,0 +1,741 @@
+RandomThings_commands:['СЋС‚СѓР±', 'music', 'roll_dice', 'randint']
+token
+2024-04-22 21:39:21,402:DEBUG:discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+2024-04-22 21:39:21,402:DEBUG:discord.http: GET /users/@me has found its initial rate limit bucket hash (78bb8553d9352a5a2f89f9def401287a).
+2024-04-22 21:39:21,402:DEBUG:discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1231342833965731922', 'username': 'lycproject', 'avatar': '43124f9c82cd15b41d6e698bb1ba247c', 'discriminator': '7581', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': '6d179a537c50e9c91d3d11829f64ada2', 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'banner_color': None, 'clan': None, 'mfa_enabled': False, 'locale': 'en-US', 'premium_type': 0, 'email': None, 'verified': True, 'bio': ''}
+2024-04-22 21:39:21,629:DEBUG:discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
+2024-04-22 21:39:21,629:DEBUG:discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (d28a133af187e91d71d96a223467ce49).
+2024-04-22 21:39:21,629:DEBUG:discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1231342833965731922', 'name': 'lycproject', 'icon': None, 'description': 'developer channel bot', 'type': None, 'bot': {'id': '1231342833965731922', 'username': 'lycproject', 'avatar': '43124f9c82cd15b41d6e698bb1ba247c', 'discriminator': '7581', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': '6d179a537c50e9c91d3d11829f64ada2', 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'banner_color': None, 'clan': None}, 'summary': '', 'is_monetized': False, 'bot_public': False, 'bot_require_code_grant': False, 'integration_types_config': {'0': {}}, 'verify_key': '3b3090fa1380d8041c6a7310b4a3b977f03d46b61c7b43ca354344f8e1e09c42', 'flags': 565248, 'tags': ['channel bot'], 'hook': True, 'storefront_available': False, 'redirect_uris': ['https://discord.com/developers/applications/1231342833965731922/oauth2'], 'interactions_endpoint_url': None, 'role_connections_verification_url': None, 'owner': {'id': '685367291906490389', 'username': 'pathologic_funny_moments', 'avatar': '4ffed2bd8d412b644f529cabfca194e5', 'discriminator': '0', 'public_flags': 0, 'flags': 0, 'banner': None, 'accent_color': 3017483, 'global_name': 'pathologic_funny_moments', 'avatar_decoration_data': None, 'banner_color': '#2e0b0b', 'clan': None}, 'approximate_guild_count': 1, 'interactions_event_types': [], 'interactions_version': 1, 'explicit_content_filter': 0, 'rpc_application_state': 0, 'store_application_state': 1, 'verification_state': 1, 'integration_public': False, 'integration_require_code_grant': False, 'discoverability_state': 1, 'discovery_eligibility_flags': 198, 'monetization_state': 1, 'monetization_eligibility_flags': 181988, 'team': None, 'internal_guild_restriction': 2}
+2024-04-22 21:39:21,862:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+2024-04-22 21:39:21,862:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-c-6nlk",{"micros":0.0}]']}}
+2024-04-22 21:39:21,863:DEBUG:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2024-04-22 21:39:22,006:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2024-04-22 21:39:22,060:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'lycproject', 'mfa_enabled': False, 'id': '1231342833965731922', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '7581', 'clan': None, 'bot': True, 'avatar': '43124f9c82cd15b41d6e698bb1ba247c'}, 'session_type': 'normal', 'session_id': '69ff654353662308a40c27f84969aaab', 'resume_gateway_url': 'wss://gateway-us-east1-c.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1231344759487070249'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['russia', 'stockholm', 'bucharest', 'frankfurt', 'frankfurt-two'], 'auth': {}, 'application': {'id': '1231342833965731922', 'flags': 565248}, '_trace': ['["gateway-prd-us-east1-c-6nlk",{"micros":54311,"calls":["id_created",{"micros":711,"calls":[]},"session_lookup_time",{"micros":813,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-134",{"micros":52494,"calls":["start_session",{"micros":37581,"calls":["discord-api-rpc-546778d64f-8mhrn",{"micros":34267,"calls":["get_user",{"micros":5548},"get_guilds",{"micros":2123},"send_scheduled_deletion_message",{"micros":9},"guild_join_requests",{"micros":548},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":47,"calls":[]},"presence_started",{"micros":7679,"calls":[]},"guilds_started",{"micros":87,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":7043,"calls":[]},"connect_finished",{"micros":7047,"calls":[]},"build_ready",{"micros":17,"calls":[]},"clean_ready",{"micros":31,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]']}}
+2024-04-22 21:39:22,060:DEBUG:discord.client: Dispatching event socket_event_type
+2024-04-22 21:39:22,060:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 69ff654353662308a40c27f84969aaab).
+2024-04-22 21:39:22,061:DEBUG:discord.client: Dispatching event connect
+2024-04-22 21:39:22,080:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'soundboard_sounds': [], 'unavailable': False, 'large': False, 'nsfw_level': 0, 'max_members': 500000, 'mfa_level': 0, 'id': '1231344759487070249', 'members': [{'user': {'username': 'pathologic_funny_moments', 'public_flags': 0, 'id': '685367291906490389', 'global_name': 'pathologic_funny_moments', 'display_name': 'pathologic_funny_moments', 'discriminator': '0', 'clan': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': '4ffed2bd8d412b644f529cabfca194e5'}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2024-04-20T20:44:28.001000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, {'user': {'username': 'lycproject', 'public_flags': 0, 'id': '1231342833965731922', 'global_name': None, 'display_name': None, 'discriminator': '7581', 'clan': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': '43124f9c82cd15b41d6e698bb1ba247c'}, 'roles': ['1231428165742755883'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2024-04-21T02:15:53.571875+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'embedded_activities': [], 'premium_progress_bar_enabled': False, 'name': 'test server', 'emojis': [], 'verification_level': 0, 'afk_channel_id': None, 'region': 'deprecated', 'nsfw': False, 'rules_channel_id': None, 'incidents_data': None, 'explicit_content_filter': 0, 'default_message_notifications': 0, 'threads': [], 'stickers': [], 'public_updates_channel_id': None, 'presences': [{'user': {'id': '685367291906490389'}, 'status': 'idle', 'client_status': {'desktop': 'idle'}, 'broadcast': None, 'activities': []}, {'user': {'id': '1231342833965731922'}, 'status': 'online', 'client_status': {'web': 'online'}, 'broadcast': None, 'activities': []}], 'stage_instances': [], 'application_command_counts': {}, 'clan': None, 'voice_states': [], 'owner_id': '685367291906490389', 'application_id': None, 'max_stage_video_channel_users': 50, 'description': None, 'preferred_locale': 'en-US', 'lazy': True, 'vanity_url_code': None, 'afk_timeout': 300, 'hub_type': None, 'banner': None, 'guild_scheduled_events': [], 'system_channel_id': '1231344759935602774', 'channels': [{'version': 1713645868051, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Информация', 'id': '1231344759935602769', 'flags': 0}, {'version': 1713645868057, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '1231344759935602769', 'name': 'приветствие-и-правила', 'last_message_id': '1231428141332037762', 'id': '1231344759935602770', 'flags': 0}, {'version': 1713645868068, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [], 'parent_id': '1231344759935602769', 'name': 'объявления', 'last_message_id': None, 'id': '1231344759935602771', 'flags': 0}, {'version': 1713645868071, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 3, 'permission_overwrites': [], 'parent_id': '1231344759935602769', 'name': 'ресурсы', 'last_message_id': None, 'id': '1231344759935602772', 'flags': 0}, {'version': 1713645868075, 'type': 4, 'position': 4, 'permission_overwrites': [], 'name': 'Текстовые каналы', 'id': '1231344759935602773', 'flags': 0}, {'version': 1713645868078, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 5, 'permission_overwrites': [], 'parent_id': '1231344759935602773', 'name': 'общее', 'last_message_id': '1232037613842468874', 'id': '1231344759935602774', 'flags': 0}, {'version': 1713645868080, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 6, 'permission_overwrites': [], 'parent_id': '1231344759935602773', 'name': 'планы-встреч', 'last_message_id': None, 'id': '1231344759935602775', 'flags': 0}, {'version': 1713645868083, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 7, 'permission_overwrites': [], 'parent_id': '1231344759935602773', 'name': 'оффтоп', 'last_message_id': None, 'id': '1231344759935602776', 'flags': 0}, {'version': 1713645868090, 'type': 4, 'position': 8, 'permission_overwrites': [], 'name': 'Голосовые каналы', 'id': '1231344759935602777', 'flags': 0}, {'version': 1713645868092, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 9, 'permission_overwrites': [], 'parent_id': '1231344759935602777', 'name': 'Комната отдыха', 'last_message_id': None, 'id': '1231344759935602778', 'flags': 0, 'bitrate': 64000}, {'version': 1713645868097, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 10, 'permission_overwrites': [], 'parent_id': '1231344759935602777', 'name': 'Комната для встреч', 'last_message_id': None, 'id': '1231344760136925204', 'flags': 0, 'bitrate': 64000}], 'system_channel_flags': 0, 'latest_onboarding_question_id': None, 'joined_at': '2024-04-21T02:15:53.571875+00:00', 'safety_alerts_channel_id': None, 'splash': None, 'features': [], 'discovery_splash': None, 'version': 1713645868101, 'roles': [{'version': 1713645868045, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '1122573558992449', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1231344759487070249', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1713705142467, 'unicode_emoji': None, 'tags': {'bot_id': '1231342833965731922'}, 'position': 1, 'permissions': '633318697598967', 'name': 'lycproject', 'mentionable': False, 'managed': True, 'id': '1231428165742755883', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'premium_subscription_count': 0, 'icon': '9ac53073c35a6e04868ed329e278ded1', 'member_count': 2, 'activity_instances': {}, 'home_header': None, 'inventory_settings': None, 'max_video_channel_users': 25, 'premium_tier': 0}}
+2024-04-22 21:39:22,081:DEBUG:discord.client: Dispatching event socket_event_type
+2024-04-22 21:39:22,081:DEBUG:discord.client: Dispatching event guild_available
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 34, in music
+    voice_client = await ctx.author.voice.channel.connect()
+AttributeError: 'NoneType' object has no attribute 'channel'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'channel'
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 35, in music
+    voice_client = await ctx.author.voice.channel.connect()
+AttributeError: 'NoneType' object has no attribute 'channel'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'channel'
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 34, in music
+    voice_client = await ctx.message.author.voice.channel.connect()
+AttributeError: 'NoneType' object has no attribute 'channel'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'channel'
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 35, in music
+    voice_client = await ctx.message.author.voice.channel.connect()
+AttributeError: 'NoneType' object has no attribute 'channel'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'channel'
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 36, in music
+    voice_clients[voice_client.guild.id] = voice_client
+IndexError: list assignment index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list assignment index out of range
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 35, in music
+    voice_client = await ctx.message.author.voice.channel.connect()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\abc.py", line 1895, in connect
+    raise ClientException('Already connected to a voice channel.')
+discord.errors.ClientException: Already connected to a voice channel.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ClientException: Already connected to a voice channel.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 35, in music
+    voice_client = await ctx.message.author.voice.channel.connect()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\abc.py", line 1895, in connect
+    raise ClientException('Already connected to a voice channel.')
+discord.errors.ClientException: Already connected to a voice channel.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ClientException: Already connected to a voice channel.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 36, in music
+    voice_clients[voice_client.guild.id] = voice_client
+IndexError: list assignment index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list assignment index out of range
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 39, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, downoload=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 39, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, downoload=False))
+TypeError: extract_info() got an unexpected keyword argument 'downoload'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: extract_info() got an unexpected keyword argument 'downoload'
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 35, in music
+    voice_client = await ctx.message.author.voice.channel.connect()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\abc.py", line 1895, in connect
+    raise ClientException('Already connected to a voice channel.')
+discord.errors.ClientException: Already connected to a voice channel.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ClientException: Already connected to a voice channel.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 42, in music
+    player = discord.FFmpegPCMAudio(song, **ffmpeg_options, executable="ffmpeg/bin/ffmpeg.exe")
+TypeError: type object argument after ** must be a mapping, not set
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: type object argument after ** must be a mapping, not set
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 35, in music
+    voice_client = await ctx.message.author.voice.channel.connect()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\abc.py", line 1895, in connect
+    raise ClientException('Already connected to a voice channel.')
+discord.errors.ClientException: Already connected to a voice channel.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ClientException: Already connected to a voice channel.
+Ignoring exception in command pause
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 845, in _parse_arguments
+    transformed = await self.transform(ctx, param, attachments)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: url is a required argument that is missing.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\default_cogs.py", line 45, in music
+    voice_client.play(player)
+UnboundLocalError: local variable 'voice_client' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: local variable 'voice_client' referenced before assignment
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "pause\" is not found
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1731, in _real_extract
+    raise ExtractorError(reason, expected=True)
+youtube_dl.utils.ExtractorError: Sign in to confirm your age
+This video may be inappropriate for some users.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Sign in to confirm your age
+This video may be inappropriate for some users.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Sign in to confirm your age
+This video may be inappropriate for some users.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 39, in music
+    voice_client.play(player)
+UnboundLocalError: local variable 'voice_client' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: local variable 'voice_client' referenced before assignment
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 815, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 836, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 534, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\youtube.py", line 1794, in _real_extract
+    'uploader_id': self._search_regex(r'/(?:channel|user)/([^/?&#]+)', owner_profile_url, 'uploader id') if owner_profile_url else None,
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\extractor\common.py", line 1012, in _search_regex
+    raise RegexNotFoundError('Unable to extract %s' % _name)
+youtube_dl.utils.RegexNotFoundError: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in music
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in <lambda>
+    data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 808, in extract_info
+    return self.__extract_info(url, ie, download, extra_info, process)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 824, in wrapper
+    self.report_error(compat_str(e), e.format_traceback())
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 628, in report_error
+    self.trouble(error_message, tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\youtube_dl\YoutubeDL.py", line 598, in trouble
+    raise DownloadError(message, exc_info)
+youtube_dl.utils.DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: DownloadError: ERROR: Unable to extract uploader id; please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 39, in music
+    voice_client.play(player)
+UnboundLocalError: local variable 'voice_client' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: local variable 'voice_client' referenced before assignment
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 29, in music
+    voice_client = await ctx.message.author.voice.channel.connect()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\abc.py", line 1895, in connect
+    raise ClientException('Already connected to a voice channel.')
+discord.errors.ClientException: Already connected to a voice channel.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ClientException: Already connected to a voice channel.
+Ignoring exception in command music
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 39, in music
+    voice_client.play(player)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\voice_client.py", line 608, in play
+    raise ClientException('Already playing audio.')
+discord.errors.ClientException: Already playing audio.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ClientException: Already playing audio.
+Ignoring exception in command youtube
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\converter.py", line 1246, in _actual_conversion
+    return converter(argument)
+ValueError: invalid literal for int() with base 10: 'запрос'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 845, in _parse_arguments
+    transformed = await self.transform(ctx, param, attachments)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 715, in transform
+    return await run_converters(ctx, converter, argument, param)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\converter.py", line 1355, in run_converters
+    return await _actual_conversion(ctx, converter, argument, param)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\converter.py", line 1255, in _actual_conversion
+    raise BadArgument(f'Converting to "{name}" failed for parameter "{param.name}".') from exc
+discord.ext.commands.errors.BadArgument: Converting to "int" failed for parameter "id".
