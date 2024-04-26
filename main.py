@@ -7,7 +7,7 @@ import os
 import asyncio
 import sys
 from discord import app_commands
-from technical import Schedule
+from technical import Schedule, DiscordEvents
 from discord.abc import Snowflake, Object
 
 
@@ -37,18 +37,35 @@ class YLBotClient(commands.Bot):
 
 
 bot = YLBotClient(command_prefix='!', intents=intents)
-
+schedule_list = []
+_queue = asyncio.Queue()
 
 @bot.tree.command(name='test', description="XDDD")
 async def test(interaction: discord.Interaction):
-    print(f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-    await interaction.response.send_modal(Schedule())
+    schedule = Schedule()
+    schedule_list.append(schedule)
+    await interaction.response.send_modal(schedule)
 
 
 @bot.tree.command(name='abc', description="XDDD")
 async def test(interaction: discord.Interaction):
-    print(f"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-    await interaction.response.send_modal(Schedule())
+    schedule = Schedule()
+    schedule_list.append(schedule)
+    await interaction.response.send_modal(schedule)
+
+
+@bot.event
+async def on_reaction_add(reaction, user):
+    if len(schedule_list) > 0:
+        for schedule in schedule_list:
+            if schedule.message.id == reaction.message.id:
+                pass#schedule.add
+
+@bot.event
+async def on_scheduled_event_create(event):
+    await _queue.put(event.url)
+    print(event.url)
+    print(123412314123412314123412314123412314123412314123412314123412314123412314123412314123412314123412314123412314)
 
 
 

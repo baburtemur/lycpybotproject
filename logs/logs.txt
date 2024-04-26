@@ -1920,3 +1920,373 @@ Traceback (most recent call last):
   File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 46, in on_submit
     print(ff.id)
 AttributeError: 'NoneType' object has no attribute 'id'
+Ignoring exception in modal <Schedule timeout=None children=4>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 45, in on_submit
+    await ff.response.edit_message(content='hui')
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\interactions.py", line 921, in edit_message
+    await adapter.create_interaction_response(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\webhook\async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10008): Unknown Message
+Ignoring exception in modal <Schedule timeout=None children=4>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 48, in on_submit
+    await ff.response.edit_message(content='hui')
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\interactions.py", line 888, in edit_message
+    raise InteractionResponded(self._parent)
+discord.errors.InteractionResponded: This interaction has already been responded to before
+Ignoring exception in modal <Schedule timeout=None children=4>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 48, in on_submit
+    await ff.followup.edit_message(content='hui')
+TypeError: edit_message() missing 1 required positional argument: 'message_id'
+Ignoring exception in modal <Schedule timeout=None children=4>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 48, in on_submit
+    await ff.followup.edit_message(interaction.original_response(), content='hui')
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\webhook\async_.py", line 1979, in edit_message
+    data = await adapter.edit_webhook_message(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\webhook\async_.py", line 221, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In message_id: Value "<coroutine object Interaction.original_response at 0x0000017AFAC756C0>" is not snowflake.
+Ignoring exception in modal <Schedule timeout=None children=4>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 48, in on_submit
+    await ff.followup.edit_message(interaction.original_response().id, content='hui')
+AttributeError: 'coroutine' object has no attribute 'id'
+Ignoring exception in modal <Schedule timeout=None children=4>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    await event_creator.create_guild_event(
+TypeError: create_guild_event() missing 2 required positional arguments: 'event_end_time' and 'event_metadata'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 65, in on_submit
+    event_start_time=str(dt.datetime.strptime(dt_string_s, "%Y-%m-%dT%H:%M:%S")),
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2024 4  26 + 19 + 26' does not match format '%Y-%m-%dT%H:%M:%S'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 60, in on_submit
+    dt_string_e = f"{str(dt.datetime.now().year)}-{str(self.mon)}-" \
+IndexError: list index out of range
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 63, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 108, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v10/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 63, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 108, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v10/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 63, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 108, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v10/guilds/1231344759487070249/scheduled-events')
+Attempting a reconnect in 1.55s
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 41, in on_submit
+    mysum += dt.timedelta(hours=int(str(self.time).split(':')[0]), minutes=int(str(self.time).split(':')[1]))
+ValueError: invalid literal for int() with base 10: '20;30'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 63, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 108, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v10/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 64, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 109, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v10/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 64, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 109, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v10/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 64, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 109, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v10/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 64, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 109, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 64, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 109, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Attempting a reconnect in 0.80s
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 66, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 111, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 70, in on_submit
+    event_start_time=str(dt.datetime.strptime(dt_string_s, "%Y-%m-%dT%H:%M")[:-3]),
+TypeError: 'datetime.datetime' object is not subscriptable
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 66, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 111, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 66, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 111, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 66, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 111, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 66, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 111, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 70, in on_submit
+    event_start_time=str(dt.datetime.strptime(dt_string_s, "%Y-%m-%dT%H:%M:%S")),
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2024-9-12T5:00' does not match format '%Y-%m-%dT%H:%M:%S'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 70, in on_submit
+    event_start_time=str(dt.datetime.strptime(dt_string_s, "%Y-%m-%dT%H:%M:%S")),
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\ProPCUser\AppData\Local\Programs\Python\Python38\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2024-4-27T5:03' does not match format '%Y-%m-%dT%H:%M:%S'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 66, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 111, in create_guild_event
+    response.raise_for_status()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\aiohttp\client_reqrep.py", line 1070, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 400, message='Bad Request', url=URL('https://discord.com/api/v9/guilds/1231344759487070249/scheduled-events')
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 60, in on_submit
+    url = _queue.get()
+NameError: name '_queue' is not defined
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 65, in on_submit
+    value=f"перейдите по этой ссылке:{url}", inline=False)
+NameError: name 'url' is not defined
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 110, in create_guild_event
+    print(response.data)
+AttributeError: 'ClientResponse' object has no attribute 'data'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 65, in on_submit
+    value=f"перейдите по этой ссылке:{url}", inline=False)
+NameError: name 'url' is not defined
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    url = await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 109, in create_guild_event
+    return json.loads(response.content)['url']
+KeyError: 'url'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    url = await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 105, in create_guild_event
+    id = json.loads(response.content)['id']
+KeyError: 'id'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    url = await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 105, in create_guild_event
+    id = json.loads(response.content)['id']
+KeyError: 'id'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    url = await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 105, in create_guild_event
+    return "https://discord.com/events/{}/{}".format(json.loads(response.content)['guild_id'],
+KeyError: 'guild_id'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    url = await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 106, in create_guild_event
+    return "https://discord.com/events/{}/{}".format(json.loads(response.content)['guild_id'],
+KeyError: 'guild_id'
+Ignoring exception in modal <Schedule timeout=None children=5>:
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ui\modal.py", line 188, in _scheduled_task
+    await self.on_submit(interaction)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 51, in on_submit
+    url = await event_creator.create_guild_event(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 106, in create_guild_event
+    id = json.loads(response.content)['id']
+KeyError: 'id'
