@@ -4,25 +4,20 @@ from discord.ext import commands
 import random, logging
 import datetime as dt
 from yt_api import get_yt_url
-from technical import cog_log
+from technical import cog_log, Schedule
 import youtube_dl
-
+from discord import app_commands
 
 intents = discord.Intents.all()
 intents.members = True
 intents.message_content = True
-voice_clients = {}
-yt_dl_opts = {'format': 'bestaudio/best'}
-ytdl = youtube_dl.YoutubeDL(yt_dl_opts)
-
-ffmpeg_options = {'options': "-vn"}
-
+tree = app_commands.CommandTree(discord.Client(intents=intents))
 
 class DefaultUsers(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-#C:\Users\ProPCUser\PycharmProjects
-    @commands.command(name='youtube')`
+
+    @commands.hybrid_command(name="youtube", with_app_command=True, desciption="svo ")
     async def youtube(self, ctx, request, id=0):
         await ctx.send(get_yt_url(request, id))
 
@@ -39,12 +34,17 @@ class DefaultUsers(commands.Cog):
 
         await message.channel.send(reply)
 
-        print(
-            f'{dt.datetime.now().strftime("%Y-%m-%d %H:%M")} {self.bot.user} ответил "{reply}" на сообщение "{message.content}" '
-            f' от @{message.author}'
-        )
+    @commands.Cog.listener()
+    async def on_member_join(self, member):
+        dmchannel = await self.bot.create_dm(member)
+        await dmchannel.send('Добро пожаловать на наш дискорд канал!')
+        await member.guild.system_channel.send(embed=discord.Embed(colour=discord.Colour.dark_embed(),
+                                                                   description=f"{member}, привет!"))
 
 
 async def setup(bot):
     await bot.add_cog(DefaultUsers(bot))
+    global tree
+    tree = bot.tree
+    print(type(bot))
     cog_log(bot, __name__)
