@@ -1,7 +1,7 @@
 import inspect
 import sys
 
-TOKEN = "MTIzMTM0MjgzMzk2NTczMTkyMg.GNvaPO.b8OqbZLlUvb5kqDB_K-EWJT_O5E1UQIzgB5pAo"
+TOKEN = # ДИСКОРД РЕСЕТАЕТ ТОКЕН КАК ТОЛЬКО ПУШУ ЕГО В ОТКРЫТЫЙ ГИТ, ПРИКРЕПИЛ РАБОТАЮЩИЙ ТОКЕН ПОД ССЫЛКОЙ В ЯНДЕКС ЛИЦЕЕ
 YT_API = "AIzaSyDq4ROZColssRSxsQl1Rpt0weyrAb7uMrw"
 BOT_ID = 1231342833965731922
 BOT_AUTH_HEADER = "https://discord.com/oauth2/authorize"
