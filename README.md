@@ -9,5 +9,5 @@ Discord bot
 Ссылка на тестовый сервер: https://discord.gg/C7pfkJJX
 
 ---Версия 1.0.0---
-Работает через облако на GLitch
 Использует сторонюю утилиту ffmpeg
+Реализовать на Glitch не получилось т.к. Дискорд автоматически меняет токен если обнаруживает его в пуше https://github.com/discord/discord-api-docs/issues/1180
