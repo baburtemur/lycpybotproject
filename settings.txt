@@ -1,0 +1,4 @@
+TIME_MUTE = 3600
+ROLE_ID = 1232060135908835348
+GIT_LINK = https://github.com/baburtemur/lycpybotproject
+GIT_ACCESSIONS_LOG = None

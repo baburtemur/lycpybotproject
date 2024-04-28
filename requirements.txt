@@ -1,0 +1,4 @@
+discord
+bs4
+sqlalchemy
+yt_dlp

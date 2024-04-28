@@ -1,15 +1,10 @@
-import datetime as dt
 import logging
-from technical import TOKEN
+import os
+import sys
+import asyncio
 import discord
 from discord.ext import commands
-import os
-import asyncio
-import sys
-from discord import app_commands
-import technical
-from discord.abc import Snowflake, Object
-
+from technical import TOKEN
 
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
@@ -37,33 +32,11 @@ class YLBotClient(commands.Bot):
 
 
 bot = YLBotClient(command_prefix='!', intents=intents)
-
-
-@bot.tree.command(name='test', description="XDDD")
-async def test(interaction: discord.Interaction):
-    schedule = technical.Schedule()
-    schedule_list.append(schedule)
-    await interaction.response.send_modal(schedule)
-
-
-@discord.app_commands.checks.has_role(technical.ROLE_ID)
-@bot.tree.command(name='планерка', description="Создание формы планерки")
-async def schedule_creation(interaction: discord.Interaction):
-    schedule = technical.Schedule()
-    schedule_list.append(schedule)
-    await interaction.response.send_modal(schedule)
-
-
-@discord.app_commands.checks.has_role(technical.ROLE_ID)
-@bot.tree.command(name='id', description="Имя пользователя по айди")
-async def id_name(ctx, id):
-    dm = await bot.create_dm(ctx.author)
-    await dm.send(bot.get_user(id))
-
-
+bot.remove_command('help')
 
 
 async def load():
+    bot.get_command('schedule')
     for filename in os.listdir("./cogs"):
         if filename.endswith('.py'):
             await bot.load_extension(f'cogs.{filename[:-3]}')

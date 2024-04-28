@@ -1,7 +1,6 @@
-import datetime
 import sqlalchemy
+
 from data.db_session import SqlAlchemyBase, create_session, global_init
-from sqlalchemy.dialects.mysql import insert
 
 
 class Accession(SqlAlchemyBase):
@@ -20,4 +19,3 @@ def add_accession(_id, date):
     db_session.add(accession)
     db_session.commit()
     return
-

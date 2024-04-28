@@ -83,11 +83,10 @@ class Music(commands.Cog):
             await ctx.send(f'Захожу в канал `{ctx.message.author.voice.channel}`')
         await ctx.message.author.voice.channel.connect()
 
-    @commands.command("music", with_app_command=True, description="картощка картощка")
+    @commands.command("music", with_app_command=True, description="Начать воспроизведение музыки")
     async def music(self, ctx, url):
         await self.add_queue(ctx, url)
         ctx.bot.loop.create_task(self.music_loop(ctx))
-
 
     async def music_loop(self, ctx):
         await self.bot.wait_until_ready()
@@ -121,7 +120,7 @@ class Music(commands.Cog):
             print(e.upper())
             await ctx.send("Возникла непредвиденная ошибка!")
 
-    @commands.hybrid_command("add_queue", with_app_command=True, desciption="Добавляет трек в конец очереди")
+    @commands.hybrid_command("add_queue", with_app_command=True, description="Добавляет трек в конец очереди")
     async def add_queue(self, ctx, url):
         if len(self.queue) == LIMIT:
             await ctx.send(f"Очередь заполнена")
@@ -131,7 +130,7 @@ class Music(commands.Cog):
 
         await self._await.put(player)
 
-    @commands.hybrid_command("remove_queue", with_app_command=True, desciption="Убирает трек в конце очереди")
+    @commands.hybrid_command("remove_queue", with_app_command=True, description="Убирает трек в конце очереди")
     async def remove_queue(self, ctx, number):
         try:
             self.queue.pop(number)
@@ -144,27 +143,27 @@ class Music(commands.Cog):
             embed = await self.quembed_ini(ctx)
             await ctx.send(embed=embed)
 
-    @commands.hybrid_command("pause", with_app_command=True, desciption="Приостановить воспроизведение")
+    @commands.hybrid_command("pause", with_app_command=True, description="Приостановить воспроизведение")
     async def pause(self, ctx):
         voice = get(self.bot.voice_clients, guild=ctx.guild)
         voice.pause()
         user = ctx.message.author.mention
         await ctx.send(f"Воспроизведение приостановлено {user}")
 
-    @commands.hybrid_command("resume", with_app_command=True, desciption="Продолжить воспроизведение")
+    @commands.hybrid_command("resume", with_app_command=True, description="Продолжить воспроизведение")
     async def resume(self, ctx):
         voice = get(self.bot.voice_clients, guild=ctx.guild)
         voice.resume()
         user = ctx.message.author.mention
         await ctx.send(f"Воспроизведение продолжено {user}")
 
-    @commands.hybrid_command("clear_queue", with_app_command=True, desciption="Очистить очередь")
+    @commands.hybrid_command("clear_queue", with_app_command=True, description="Очистить очередь")
     async def clear_queue(self, ctx):
         self.queue.clear()
         user = ctx.message.author.mention
         await ctx.send(f"Очередь очищенна {user}")
 
-    @commands.hybrid_command("view_queue", with_app_command=True, desciption="Показать очередь")
+    @commands.hybrid_command("view_queue", with_app_command=True, description="Показать очередь")
     async def view_queue(self, ctx):
         if len(self.queue) < 1:
             await ctx.send('Очередь пока что пуста - используйте /add_queue [ссылка] или !add_queue "ссылка"')
