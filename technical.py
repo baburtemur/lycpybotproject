@@ -11,6 +11,11 @@ TOKEN = "MTIzMTM0MjgzMzk2NTczMTkyMg.G8yRvV.HVb_qr_EfC5GzyE9GR1LicN36fHczxRE7z3J-
 YT_API = "AIzaSyDq4ROZColssRSxsQl1Rpt0weyrAb7uMrw"
 BOT_ID = 1231342833965731922
 BOT_AUTH_HEADER = "https://discord.com/oauth2/authorize"
+TIME_MUTE = 3600 #v sekundah
+ROLE_ID = 1232060135908835348
+GIT_LINK = "empty"
+SETTINGS = {"TIME_MUTE":TIME_MUTE, "BOT_ID":BOT_ID, "ROLE_ID":ROLE_ID, "GIT_LINK":GIT_LINK}
+
 
 def cog_log(bot, name):
     clsmembers = inspect.getmembers(sys.modules[name], inspect.isclass)
@@ -65,8 +70,8 @@ class Schedule(ui.Modal, title='Форма планерки'):
                                           f"{calendar.month_name[int(str(self.mon))]} {str(self.day)}, "
                                           f"с {time_bef[:-3]} до {time_af[:-3]}\n"
                                           f"**Цель встречи**:\n{str(self.text)}\n")
-        embed.add_field(name="Чтобы обозначить своё участие",
-                        value=f"перейдите по этой ссылке:\n{url}", inline=False)
+        embed.add_field(name="Чтобы обозначить своё участие - ",
+                        value=f"перейдите по этой [ссылке]({url})", inline=False)
         allowed_mentions = discord.AllowedMentions(everyone=True)
         embed.set_author(name=author.name, icon_url=author.avatar)
         await interaction.response.send_message('@everyone', embed=embed,

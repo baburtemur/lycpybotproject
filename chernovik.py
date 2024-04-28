@@ -5,7 +5,7 @@ import datetime as dt
 import json
 
 
-def pisun():
+def afws():
     dt_string_s = "2024-05-01T15:20:15"
     dt_string_e = "2024-05-01T17:20:15"
 

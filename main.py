@@ -7,7 +7,7 @@ import os
 import asyncio
 import sys
 from discord import app_commands
-from technical import Schedule, DiscordEvents
+import technical
 from discord.abc import Snowflake, Object
 
 
@@ -37,35 +37,28 @@ class YLBotClient(commands.Bot):
 
 
 bot = YLBotClient(command_prefix='!', intents=intents)
-schedule_list = []
-_queue = asyncio.Queue()
+
 
 @bot.tree.command(name='test', description="XDDD")
 async def test(interaction: discord.Interaction):
-    schedule = Schedule()
+    schedule = technical.Schedule()
     schedule_list.append(schedule)
     await interaction.response.send_modal(schedule)
 
 
-@bot.tree.command(name='abc', description="XDDD")
-async def test(interaction: discord.Interaction):
-    schedule = Schedule()
+@discord.app_commands.checks.has_role(technical.ROLE_ID)
+@bot.tree.command(name='планерка', description="Создание формы планерки")
+async def schedule_creation(interaction: discord.Interaction):
+    schedule = technical.Schedule()
     schedule_list.append(schedule)
     await interaction.response.send_modal(schedule)
 
 
-@bot.event
-async def on_reaction_add(reaction, user):
-    if len(schedule_list) > 0:
-        for schedule in schedule_list:
-            if schedule.message.id == reaction.message.id:
-                pass#schedule.add
-
-@bot.event
-async def on_scheduled_event_create(event):
-    await _queue.put(event.url)
-    print(event.url)
-    print(123412314123412314123412314123412314123412314123412314123412314123412314123412314123412314123412314123412314)
+@discord.app_commands.checks.has_role(technical.ROLE_ID)
+@bot.tree.command(name='id', description="Имя пользователя по айди")
+async def id_name(ctx, id):
+    dm = await bot.create_dm(ctx.author)
+    await dm.send(bot.get_user(id))
 
 
 

@@ -1,3 +1,4 @@
+import sqlalchemy
 import sqlalchemy as sa
 import sqlalchemy.orm as orm
 from sqlalchemy.orm import Session
@@ -25,8 +26,7 @@ def global_init(db_file):
     print(engine.url)
     if not database_exists(engine.url):
         create_database(engine.url)
-    __factory = orm.sessionmaker(bind=engine)
-
+    __factory = orm.sessionmaker(bind=engine, autoflush=False)
     from . import __all_models
 
     SqlAlchemyBase.metadata.create_all(engine)

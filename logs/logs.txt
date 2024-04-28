@@ -2290,3 +2290,2217 @@ Traceback (most recent call last):
   File "C:\Users\ProPCUser\PycharmProjects\lycproject\technical.py", line 106, in create_guild_event
     id = json.loads(response.content)['id']
 KeyError: 'id'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 16, in add_user
+    db_session = create_session()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\db_session.py", line 37, in create_session
+    return __factory()
+TypeError: 'NoneType' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'NoneType' object is not callable
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 33, in warn
+    if add_user(member.id) == 2:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 29, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 18, in add_user
+    print(user.id, user.warnings)
+AttributeError: 'User' object has no attribute 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'User' object has no attribute 'id'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 29, in add_user
+    print(user.id, user.warnings)
+AttributeError: 'User' object has no attribute 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'User' object has no attribute 'id'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 29, in add_user
+    print(user.id, user.warnings)
+AttributeError: 'User' object has no attribute 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'User' object has no attribute 'id'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 33, in warn
+    if add_user(member.id) == 2:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 33, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 29, in add_user
+    db_session.merge(id)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3897, in merge
+    self._autoflush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3005, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2994, in _autoflush
+    self.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.merge(id)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3897, in merge
+    self._autoflush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3005, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2994, in _autoflush
+    self.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 31, in add_user
+    db_session.merge(id)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3897, in merge
+    self._autoflush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3005, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2994, in _autoflush
+    self.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 31, in add_user
+    db_session.merge(user)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3897, in merge
+    self._autoflush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3005, in _autoflush
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2994, in _autoflush
+    self.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 33, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "warnings" is not found
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3083, in refresh
+    state = attributes.instance_state(instance)
+AttributeError: 'int' object has no attribute '_sa_instance_state'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.refresh(user.Warnings)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3085, in refresh
+    raise exc.UnmappedInstanceError(instance) from err
+sqlalchemy.orm.exc.UnmappedInstanceError: Class 'builtins.int' is not mapped
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnmappedInstanceError: Class 'builtins.int' is not mapped
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 31, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (2, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (2, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 29, in add_user
+    db_session.execute(User.insert().values(Warnings=user.Warnings))
+AttributeError: type object 'User' has no attribute 'insert'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: type object 'User' has no attribute 'insert'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 28, in add_user
+    user.update()
+AttributeError: 'User' object has no attribute 'update'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'User' object has no attribute 'update'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 28, in add_user
+    stmt = User.update().values(Warnings=user.Warnings).where(User.Id == user.Id)
+AttributeError: type object 'User' has no attribute 'update'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: type object 'User' has no attribute 'update'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 28, in add_user
+    db_session.query(User).filter(User.Id == user.Id).update({'Warnings': user.Warnings})
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\query.py", line 3251, in update
+    result: CursorResult[Any] = self.session.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2191, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 1617, in orm_execute_statement
+    return super().orm_execute_statement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 28, in add_user
+    Warnings=insert_stmt.values.Warnings,
+AttributeError: 'function' object has no attribute 'Warnings'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'function' object has no attribute 'Warnings'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\visitors.py", line 137, in _compiler_dispatch
+    meth = getter(visitor)
+AttributeError: 'SQLiteCompiler' object has no attribute 'visit_on_duplicate_key_update'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 31, in add_user
+    db_session.execute(on_duplicate_key_stmt)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2191, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 1276, in orm_execute_statement
+    result = conn.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1636, in _execute_clauseelement
+    compiled_sql, extracted_params, cache_hit = elem._compile_w_cache(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 715, in _compile_w_cache
+    compiled_sql = self._compiler(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 315, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\compiler.py", line 1429, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\compiler.py", line 870, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\compiler.py", line 915, in process
+    return obj._compiler_dispatch(self, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\annotation.py", line 344, in _compiler_dispatch
+    return self.__element.__class__._compiler_dispatch(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\visitors.py", line 141, in _compiler_dispatch
+    return meth(self, **kw)  # type: ignore  # noqa: E501
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\compiler.py", line 6084, in visit_insert
+    post_values_clause = self.process(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\compiler.py", line 915, in process
+    return obj._compiler_dispatch(self, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\visitors.py", line 139, in _compiler_dispatch
+    return visitor.visit_unsupported_compilation(self, err, **kw)  # type: ignore  # noqa: E501
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\compiler.py", line 902, in visit_unsupported_compilation
+    raise exc.UnsupportedCompilationError(self, type(element)) from err
+sqlalchemy.exc.UnsupportedCompilationError: Compiler <sqlalchemy.dialects.sqlite.base.SQLiteCompiler object at 0x0000015A1C71E7F0> can't render element of type <class 'sqlalchemy.dialects.mysql.dml.OnDuplicateClause'> (Background on this error at: https://sqlalche.me/e/20/l7de)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnsupportedCompilationError: Compiler <sqlalchemy.dialects.sqlite.base.SQLiteCompiler object at 0x0000015A1C71E7F0> can't render element of type <class 'sqlalchemy.dialects.mysql.dml.OnDuplicateClause'> (Background on this error at: https://sqlalche.me/e/20/l7de)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 27, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 28, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 28, in add_user
+    db_session.execute(sqlalchemy.text(f"""UPDATE Users
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2200, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE Users
+SET Warnings=4
+WHERE Id=685367291906490389]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE Users
+SET Warnings=4
+WHERE Id=685367291906490389]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 28, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: UPDATE "Users" SET "Warnings"=? WHERE "Users"."Id" = ?]
+[parameters: (1, 685367291906490389)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: near "Users": syntax error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 33, in add_user
+    db_session.execute(sql)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2200, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "Users": syntax error
+[SQL: REPLACE Users 
+            SET "Warnings"=1 
+            WHERE "Users"."Id" = 685367291906490389]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: OperationalError: (sqlite3.OperationalError) near "Users": syntax error
+[SQL: REPLACE Users 
+            SET "Warnings"=1 
+            WHERE "Users"."Id" = 685367291906490389]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: near "Users": syntax error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 33, in add_user
+    db_session.execute(sql)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2200, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "Users": syntax error
+[SQL: REPLACE Users 
+            SET Warnings=1 
+            WHERE Id=685367291906490389]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: OperationalError: (sqlite3.OperationalError) near "Users": syntax error
+[SQL: REPLACE Users 
+            SET Warnings=1 
+            WHERE Id=685367291906490389]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 31, in add_user
+    .update({User.your_field: sqlalchemy.sql.expression.func.replace(User.Warnings,
+AttributeError: type object 'User' has no attribute 'your_field'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: type object 'User' has no attribute 'your_field'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 33, in add_user
+    db_session.execute(updated_rows)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2089, in _execute_internal
+    statement = coercions.expect(roles.StatementRole, statement)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 396, in expect
+    resolved = impl._literal_coercion(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 634, in _literal_coercion
+    self._raise_for_expected(element, argname)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\coercions.py", line 518, in _raise_for_expected
+    raise exc.ArgumentError(msg, code=code) from err
+sqlalchemy.exc.ArgumentError: Executable SQL or text() construct expected, got 2.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ArgumentError: Executable SQL or text() construct expected, got 2.
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 26, in add_user
+    user.Warnings += 1
+AttributeError: 'NoneType' object has no attribute 'Warnings'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'Warnings'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 33, in warn
+    if add_user(member.id) == 2:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 30, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: Users.Id, Users.Warnings
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 30, in warn
+    if add_user(member.id) == 3:
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\data\models\user_db.py", line 33, in add_user
+    db_session.commit()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4432, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: Users.Id, Users.Warnings
+[SQL: INSERT INTO "Users" ("Id", "Warnings") VALUES (?, ?)]
+[parameters: (685367291906490389, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in warn
+    role = discord.utils.get(member.server.roles, name='Muted')
+AttributeError: 'Member' object has no attribute 'server'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Member' object has no attribute 'server'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 27, in warn
+    print(ctx.MessageReference)
+AttributeError: 'Context' object has no attribute 'MessageReference'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Context' object has no attribute 'MessageReference'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 32, in warn
+    status = add_user(reference.author.id)
+AttributeError: 'int' object has no attribute 'author'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'int' object has no attribute 'author'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 37, in warn
+    role = discord.utils.get(member.server.roles, name='Muted')
+AttributeError: 'Member' object has no attribute 'server'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Member' object has no attribute 'server'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in warn
+    role = discord.utils.get(member.server.roles, name='Muted')
+AttributeError: 'Member' object has no attribute 'server'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'Member' object has no attribute 'server'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 31, in warn
+    ctx.send.message(f"Прощай {member}!")
+AttributeError: 'function' object has no attribute 'message'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'function' object has no attribute 'message'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in warn
+    await self.bot.add_roles(member, role)
+AttributeError: 'YLBotClient' object has no attribute 'add_roles'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'YLBotClient' object has no attribute 'add_roles'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 35, in warn
+    await member.add_roles(role, atomic=True, reason="Second chinese warning")
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\member.py", line 1051, in add_roles
+    await req(guild_id, user_id, role.id, reason=reason)
+AttributeError: 'NoneType' object has no attribute 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'id'
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 34, in warn
+    await member.edit(mute=True)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\member.py", line 913, in edit
+    data = await http.edit_member(guild_id, self.id, reason=reason, **payload)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 40032): Target user is not connected to voice.
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 36, in warn
+    await ctx.message(f"{member} отправлен в тайм-аут до {ff}")
+TypeError: 'Message' object is not callable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'Message' object is not callable
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 37, in warn
+    await member.edit(timed_out_until=ff)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\member.py", line 913, in edit
+    data = await http.edit_member(guild_id, self.id, reason=reason, **payload)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 37, in warn
+    await member.edit(timed_out_until=ff)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\member.py", line 913, in edit
+    data = await http.edit_member(guild_id, self.id, reason=reason, **payload)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+Ignoring exception in command warn
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\cogs\dev_cogs.py", line 37, in warn
+    await member.edit(timed_out_until=ff)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\member.py", line 913, in edit
+    data = await http.edit_member(guild_id, self.id, reason=reason, **payload)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "C:\Users\ProPCUser\PycharmProjects\lycproject\venv\lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
